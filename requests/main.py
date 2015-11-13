@@ -1,3 +1,5 @@
+import functools
+import unittest
 
 def print_txt(txt,b):
     if(b==True):
@@ -51,44 +53,44 @@ def get_func_args(func, stripself=False, output=True):
     print_txt(txt,output)
     return func_args
 
-def test_get_func_args(self):
-    def f1(a, b, c):
-        pass
-
-    def f2(a, b=None, c=None):
-        pass
-
-    class A(object):
-        def __init__(self, a, b, c):
+class TestStringMethods(unittest.TestCase):
+    def test_get_func_args(self):
+        def f1(a, b, c):
             pass
 
-        def method(self, a, b, c):
+        def f2(a, b=None, c=None):
             pass
 
-    class Callable(object):
+        class A(object):
+            def __init__(self, a, b, c):
+                pass
 
-        def __call__(self, a, b, c):
-            pass
+            def method(self, a, b, c):
+                pass
 
-    a = A(1, 2, 3)
-    cal = Callable()
-    partial_f1 = functools.partial(f1, None)
-    partial_f2 = functools.partial(f1, b=None)
-    partial_f3 = functools.partial(partial_f2, None)
+        class Callable(object):
 
-    self.assertEqual(get_func_args(f1), ['a', 'b', 'c'])
-    self.assertEqual(get_func_args(f2), ['a', 'b', 'c'])
-    self.assertEqual(get_func_args(A), ['a', 'b', 'c'])
-    self.assertEqual(get_func_args(a.method), ['a', 'b', 'c'])
-    self.assertEqual(get_func_args(partial_f1), ['b', 'c'])
-    self.assertEqual(get_func_args(partial_f2), ['a', 'c'])
-    self.assertEqual(get_func_args(partial_f3), ['c'])
-    self.assertEqual(get_func_args(cal), ['a', 'b', 'c'])
-    self.assertEqual(get_func_args(object), [])
+            def __call__(self, a, b, c):
+                pass
 
-    # TODO: how do we fix this to return the actual argument names?
-    self.assertEqual(get_func_args(six.text_type.split), [])
-    self.assertEqual(get_func_args(" ".join), [])
-    self.assertEqual(get_func_args(operator.itemgetter(2)), [])
+        a = A(1, 2, 3)
+        cal = Callable()
+        partial_f1 = functools.partial(f1, None)
+        partial_f2 = functools.partial(f1, b=None)
+        partial_f3 = functools.partial(partial_f2, None)
 
-test_get_func_args()
+        self.assertEqual(get_func_args(f1), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(f2), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(A), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(a.method), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(partial_f1), ['b', 'c'])
+        self.assertEqual(get_func_args(partial_f2), ['a', 'c'])
+        self.assertEqual(get_func_args(partial_f3), ['c'])
+        self.assertEqual(get_func_args(cal), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(object), [])
+
+        # TODO: how do we fix this to return the actual argument names?
+        self.assertEqual(get_func_args(six.text_type.split), [])
+        self.assertEqual(get_func_args(" ".join), [])
+        self.assertEqual(get_func_args(operator.itemgetter(2)), [])
+
