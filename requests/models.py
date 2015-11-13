@@ -77,6 +77,8 @@ class Body:
 
     def prepare_content_length(self,body):
         pass
+    def _encode_files(self,files,data):
+        return None,None
 
 b = Body()
 b.prepare_body(None,None,None)
