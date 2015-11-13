@@ -82,8 +82,12 @@ class TestStringMethods(unittest.TestCase):
         partial_f2 = functools.partial(f1, b=None)
         partial_f3 = functools.partial(partial_f2, None)
 
+        try:
+            self.assertEqual(get_func_args(None), None)
+        except:
+            pass
+        self.assertEqual(get_func_args(f2, True), ['b', 'c'])
         self.assertEqual(get_func_args(f1), ['a', 'b', 'c'])
-        self.assertEqual(get_func_args(f2), ['a', 'b', 'c'])
         self.assertEqual(get_func_args(A), ['a', 'b', 'c'])
         self.assertEqual(get_func_args(a.method), ['a', 'b', 'c'])
         self.assertEqual(get_func_args(partial_f1), ['b', 'c'])
