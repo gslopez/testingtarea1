@@ -94,3 +94,4 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(get_func_args(" ".join), [])
         self.assertEqual(get_func_args(operator.itemgetter(2)), [])
 
+k = TestStringMethods()
