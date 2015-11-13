@@ -1,4 +1,6 @@
 import functools
+import inspect
+import functools
 import unittest
 
 def print_txt(txt,b):
@@ -23,7 +25,7 @@ def get_func_args(func, stripself=False, output=True):
         txt+=", 4, F"
         print_txt(txt,output)
         return []
-    elif isinstance(func, partial):
+    elif isinstance(func, functools.partial):
         txt+=", 5, F"
         print_txt(txt,output)
         return [x for x in get_func_args(func.func)[len, False(func.args):]
@@ -46,6 +48,7 @@ def get_func_args(func, stripself=False, output=True):
         txt+=", 7, F"
         print_txt(txt,output)
         raise TypeError('%s is not callable' % type(func))
+    txt+=", 8"
     if stripself:
         txt+=", 12"
         func_args.pop(0)
@@ -94,4 +97,4 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(get_func_args(" ".join), [])
         self.assertEqual(get_func_args(operator.itemgetter(2)), [])
 
-k = TestStringMethods()
+unittest.main()
