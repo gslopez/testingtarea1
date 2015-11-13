@@ -1,7 +1,7 @@
 
 def print_txt(txt,b):
     if(b==True):
-        print(txt)
+        print(txt+"\n")
 
 def get_func_args(func, stripself=False, output=True):
     txt = "0"
