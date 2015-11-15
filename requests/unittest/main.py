@@ -109,24 +109,24 @@ class TestStringMethods(unittest.TestCase):
             pass
 
         print "Caso 2:"
-        self.assertEqual(get_func_args(f2, True), ['b', 'c'])
+        self.assertEqual(get_func_args(f2, True, True), ['b', 'c'])
         print "Caso 3:"
-        self.assertEqual(get_func_args(f1), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(f1, False, True), ['a', 'b', 'c'])
         print "Caso 4:"
-        self.assertEqual(get_func_args(A), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(A, False, True), ['a', 'b', 'c'])
         print "Caso 5:"
-        self.assertEqual(get_func_args(a.method), ['a', 'b', 'c'])
+        self.assertEqual(get_func_args(a.method, False, True), ['a', 'b', 'c'])
         print "Caso 6:"
-        self.assertEqual(get_func_args(n), [])#4
+        self.assertEqual(get_func_args(n, False, True), [])#4
         print "Caso 7:"
-        self.assertEqual(get_func_args(partial_f1), ['b', 'c'])#5
+        self.assertEqual(get_func_args(partial_f1, False, True), ['b', 'c'])#5
         print "Caso 8:"
-        self.assertEqual(get_func_args(" ".join), [])
+        self.assertEqual(get_func_args(" ".join, False, True), [])
         print "Caso 9:"
-        self.assertEqual(get_func_args(cal_with_name), [])
+        self.assertEqual(get_func_args(cal_with_name, False, True), [])
 
         print "Caso 10:"
-        self.assertEqual(get_func_args(operator.itemgetter(2)), [])
+        self.assertEqual(get_func_args(operator.itemgetter(2), False, True), [])
         # print "Caso 10:"
         # self.assertEqual(get_func_args(partial_f3), ['c'])
         # print "Caso 11:"
