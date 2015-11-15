@@ -1,4 +1,5 @@
 from Func import *
+import operator
 
 
 class FuncLibrary(object):
@@ -118,7 +119,16 @@ class FuncLibrary(object):
     def get_class_method(self):
         return self.a.method
 
+    def get_enumerable_class(self):
+        return self.n
+    
+    def get_string_method(self):
+        return " ".join
+
     def get_method_descriptor(self):
         return self.n
-            
+
+    def get_item_getter(self):
+        return operator.itemgetter(2)
+
             
