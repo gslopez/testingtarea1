@@ -1,6 +1,7 @@
 Para correr el proyecto:
 
-1 - Instalar robot framework
+1 - Instalar robot framework (pip install robotframework)
+2 - Instalar Scrapy (pip install scrapy)
 2 - cd robotframework
 3 - pybot library_test.robot 
 
