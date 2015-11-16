@@ -1,4 +1,7 @@
-from Func import *
+from scrapy.utils.python import get_func_args
+import functools
+import inspect
+import six
 import operator
 
 
@@ -9,7 +12,6 @@ class FuncLibrary(object):
     """
 
     def __init__(self):
-        self._func = Func()
         self._result = None
 
         #ORDENAR ESTO
@@ -61,8 +63,8 @@ class FuncLibrary(object):
         self.f2=f2
         self.f1=f1
 
-    def get_arguments(self, func, stripself, output):
-        self._result = self._func.get_func_args(func,stripself,output)
+    def get_arguments(self, func, stripself):
+        self._result = get_func_args(func, stripself)
 
 
     def result_should_be(self, expected):
@@ -75,7 +77,7 @@ class FuncLibrary(object):
         if self._result != expected:
             raise AssertionError('%s != %s' % (self._result, expected))
 
-    def should_cause_error(self, func, stripself, output):
+    def should_cause_error(self, func, stripself):
         """Verifies that calculating the given ``expression`` causes an error.
 
         The error message is returned and can be verified using, for example,
@@ -87,7 +89,7 @@ class FuncLibrary(object):
         | Should Be Equal    | ${error}           | Division by zero. |
         """
         try:
-            self.get_arguments(func,stripself,output)
+            self.get_arguments(func,stripself)
         except TypeError, err:
             return str(err)
         else:
@@ -121,7 +123,7 @@ class FuncLibrary(object):
 
     def get_enumerable_class(self):
         return self.n
-    
+
     def get_string_method(self):
         return " ".join
 
@@ -131,4 +133,4 @@ class FuncLibrary(object):
     def get_item_getter(self):
         return operator.itemgetter(2)
 
-            
+
