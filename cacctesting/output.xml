@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151115 23:22:17.531" generator="Robot 2.9.2 (Python 2.7.8 on darwin)">
+<suite source="/Users/cnmartinez/Development/python/testingtarea1/cacctesting/cacc_test.robot" id="s1" name="Cacc Test">
+<test id="s1-t1" name="All True">
+<kw name="Get Module 1" library="CACCLibrary">
+<assign>
+<var>${log1}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.071" level="INFO">${log1} = &lt;module 'log1' from '/Users/cnmartinez/Development/python/testingtarea1/cacctesting/log1.py'&gt;</msg>
+<status status="PASS" endtime="20151115 23:22:18.071" starttime="20151115 23:22:18.070"></status>
+</kw>
+<kw name="Get Spider 1" library="CACCLibrary">
+<assign>
+<var>${spider_1}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.072" level="INFO">${spider_1} = &lt;class 'log1.MySpider1'&gt;</msg>
+<status status="PASS" endtime="20151115 23:22:18.072" starttime="20151115 23:22:18.071"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${spider_1}</arg>
+</arguments>
+<assign>
+<var>${expected}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.073" level="INFO">${expected} = [&lt;class 'log1.MySpider1'&gt;]</msg>
+<status status="PASS" endtime="20151115 23:22:18.073" starttime="20151115 23:22:18.072"></status>
+</kw>
+<kw name="All True Case" library="CACCLibrary">
+<arguments>
+<arg>${log1}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.074" starttime="20151115 23:22:18.073"></status>
+</kw>
+<kw name="Result Should Be" library="CACCLibrary">
+<doc>Verifies that the current result is ``expected``.</doc>
+<arguments>
+<arg>${expected}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.074" starttime="20151115 23:22:18.074"></status>
+</kw>
+<status status="PASS" endtime="20151115 23:22:18.075" critical="yes" starttime="20151115 23:22:18.070"></status>
+</test>
+<test id="s1-t2" name="B False Others True">
+<kw name="Get Module 2" library="CACCLibrary">
+<assign>
+<var>${log2}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.077" level="INFO">${log2} = &lt;module 'log2' from '/Users/cnmartinez/Development/python/testingtarea1/cacctesting/log2.py'&gt;</msg>
+<status status="PASS" endtime="20151115 23:22:18.077" starttime="20151115 23:22:18.076"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${expected}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.077" level="INFO">${expected} = []</msg>
+<status status="PASS" endtime="20151115 23:22:18.077" starttime="20151115 23:22:18.077"></status>
+</kw>
+<kw name="B False Others True Case" library="CACCLibrary">
+<arguments>
+<arg>${log2}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.078" starttime="20151115 23:22:18.078"></status>
+</kw>
+<kw name="Result Should Be" library="CACCLibrary">
+<doc>Verifies that the current result is ``expected``.</doc>
+<arguments>
+<arg>${expected}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.079" starttime="20151115 23:22:18.079"></status>
+</kw>
+<status status="PASS" endtime="20151115 23:22:18.080" critical="yes" starttime="20151115 23:22:18.075"></status>
+</test>
+<test id="s1-t3" name="C False Others True">
+<kw name="Get Module 3" library="CACCLibrary">
+<assign>
+<var>${log3}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.081" level="INFO">${log3} = &lt;module 'log3' from '/Users/cnmartinez/Development/python/testingtarea1/cacctesting/log3.py'&gt;</msg>
+<status status="PASS" endtime="20151115 23:22:18.082" starttime="20151115 23:22:18.081"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${expected}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.082" level="INFO">${expected} = []</msg>
+<status status="PASS" endtime="20151115 23:22:18.082" starttime="20151115 23:22:18.082"></status>
+</kw>
+<kw name="C False Others True Case" library="CACCLibrary">
+<arguments>
+<arg>${log3}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.083" starttime="20151115 23:22:18.083"></status>
+</kw>
+<kw name="Result Should Be" library="CACCLibrary">
+<doc>Verifies that the current result is ``expected``.</doc>
+<arguments>
+<arg>${expected}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.084" starttime="20151115 23:22:18.084"></status>
+</kw>
+<status status="PASS" endtime="20151115 23:22:18.084" critical="yes" starttime="20151115 23:22:18.080"></status>
+</test>
+<test id="s1-t4" name="D False Others True">
+<kw name="Get Module 4" library="CACCLibrary">
+<assign>
+<var>${log4}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.086" level="INFO">${log4} = &lt;module 'log4' from '/Users/cnmartinez/Development/python/testingtarea1/cacctesting/log4.py'&gt;</msg>
+<status status="PASS" endtime="20151115 23:22:18.086" starttime="20151115 23:22:18.086"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${expected}</var>
+</assign>
+<msg timestamp="20151115 23:22:18.087" level="INFO">${expected} = []</msg>
+<status status="PASS" endtime="20151115 23:22:18.087" starttime="20151115 23:22:18.086"></status>
+</kw>
+<kw name="D False Others True Case" library="CACCLibrary">
+<arguments>
+<arg>${log4}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.088" starttime="20151115 23:22:18.088"></status>
+</kw>
+<kw name="Result Should Be" library="CACCLibrary">
+<doc>Verifies that the current result is ``expected``.</doc>
+<arguments>
+<arg>${expected}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 23:22:18.089" starttime="20151115 23:22:18.089"></status>
+</kw>
+<status status="PASS" endtime="20151115 23:22:18.089" critical="yes" starttime="20151115 23:22:18.085"></status>
+</test>
+<doc>Example test cases using the keyword-driven testing approach.
+
+All tests contain a workflow constructed from keywords in
+``CACCLibrary.py``. Creating new tests or editing
+existing is easy even for people without programming skills.
+
+The _keyword-driven_ appoach works well for normal test
+automation, but the _gherkin_ style might be even better
+if also business people need to understand tests. If the
+same workflow needs to repeated multiple times, it is best
+to use to the _data-driven_ approach.</doc>
+<status status="PASS" endtime="20151115 23:22:18.090" starttime="20151115 23:22:17.534"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Cacc Test" pass="4">Cacc Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
