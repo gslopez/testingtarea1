@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151115 01:53:07.129" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
-<suite source="/Users/gslopez/git_workspace/requests/requests/robotframework/library_test.robot" id="s1" name="Library Test">
+<robot generated="20151115 21:12:34.755" generator="Robot 2.9.2 (Python 2.7.6 on linux2)">
+<suite source="/home/lukas/universidad/2015-2/Testing/tarea1/robotframework/library_test.robot" id="s1" name="Library Test">
 <test id="s1-t1" name="Get Arguments of None">
 <kw name="Should Cause Error" library="FuncLibrary">
 <doc>Verifies that calculating the given ``expression`` causes an error.</doc>
@@ -9,10 +9,10 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.172" level="INFO">0, 7, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.172" starttime="20151115 01:53:07.172"></status>
+<msg timestamp="20151115 21:12:34.908" level="INFO">0, 7, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.909" starttime="20151115 21:12:34.908"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.173" critical="yes" starttime="20151115 01:53:07.171"></status>
+<status status="PASS" endtime="20151115 21:12:34.909" critical="yes" starttime="20151115 21:12:34.907"></status>
 </test>
 <test id="s1-t2" name="Get Arguments of function with strip">
 <kw name="Get Function" library="FuncLibrary">
@@ -22,8 +22,8 @@
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.174" level="INFO">${func} = &lt;function f2 at 0x10e3c6320&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.174" starttime="20151115 01:53:07.173"></status>
+<msg timestamp="20151115 21:12:34.910" level="INFO">${func} = &lt;function f2 at 0x7f9d9c992f50&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.910" starttime="20151115 21:12:34.910"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -34,8 +34,8 @@
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.174" level="INFO">${expected} = [u'b', u'c']</msg>
-<status status="PASS" endtime="20151115 01:53:07.174" starttime="20151115 01:53:07.174"></status>
+<msg timestamp="20151115 21:12:34.910" level="INFO">${expected} = [u'b', u'c']</msg>
+<status status="PASS" endtime="20151115 21:12:34.911" starttime="20151115 21:12:34.910"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -43,17 +43,17 @@
 <arg>${True}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.175" level="INFO">0, 1, 8, 12, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.175" starttime="20151115 01:53:07.174"></status>
+<msg timestamp="20151115 21:12:34.911" level="INFO">0, 1, 8, 12, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.911" starttime="20151115 21:12:34.911"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.175" starttime="20151115 01:53:07.175"></status>
+<status status="PASS" endtime="20151115 21:12:34.912" starttime="20151115 21:12:34.911"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.175" critical="yes" starttime="20151115 01:53:07.173"></status>
+<status status="PASS" endtime="20151115 21:12:34.912" critical="yes" starttime="20151115 21:12:34.909"></status>
 </test>
 <test id="s1-t3" name="Get Arguments of function with default values">
 <kw name="Get Function" library="FuncLibrary">
@@ -63,8 +63,8 @@
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.176" level="INFO">${func} = &lt;function f1 at 0x10e3c6398&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.177" starttime="20151115 01:53:07.176"></status>
+<msg timestamp="20151115 21:12:34.913" level="INFO">${func} = &lt;function f1 at 0x7f9d9c992e60&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.913" starttime="20151115 21:12:34.913"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -76,8 +76,8 @@
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.177" level="INFO">${expected} = [u'a', u'b', u'c']</msg>
-<status status="PASS" endtime="20151115 01:53:07.177" starttime="20151115 01:53:07.177"></status>
+<msg timestamp="20151115 21:12:34.914" level="INFO">${expected} = [u'a', u'b', u'c']</msg>
+<status status="PASS" endtime="20151115 21:12:34.914" starttime="20151115 21:12:34.913"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -85,25 +85,25 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.178" level="INFO">0, 1, 8, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.178" starttime="20151115 01:53:07.177"></status>
+<msg timestamp="20151115 21:12:34.914" level="INFO">0, 1, 8, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.914" starttime="20151115 21:12:34.914"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.178" starttime="20151115 01:53:07.178"></status>
+<status status="PASS" endtime="20151115 21:12:34.915" starttime="20151115 21:12:34.915"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.178" critical="yes" starttime="20151115 01:53:07.176"></status>
+<status status="PASS" endtime="20151115 21:12:34.915" critical="yes" starttime="20151115 21:12:34.912"></status>
 </test>
 <test id="s1-t4" name="Get Arguments of class with constructor">
 <kw name="Get Standard Class" library="FuncLibrary">
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.179" level="INFO">${func} = &lt;class 'FuncLibrary.A'&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.179" starttime="20151115 01:53:07.179"></status>
+<msg timestamp="20151115 21:12:34.916" level="INFO">${func} = &lt;class 'FuncLibrary.A'&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.916" starttime="20151115 21:12:34.916"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -115,8 +115,8 @@
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.180" level="INFO">${expected} = [u'a', u'b', u'c']</msg>
-<status status="PASS" endtime="20151115 01:53:07.180" starttime="20151115 01:53:07.179"></status>
+<msg timestamp="20151115 21:12:34.917" level="INFO">${expected} = [u'a', u'b', u'c']</msg>
+<status status="PASS" endtime="20151115 21:12:34.917" starttime="20151115 21:12:34.917"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -124,25 +124,25 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.180" level="INFO">0, 2, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.180" starttime="20151115 01:53:07.180"></status>
+<msg timestamp="20151115 21:12:34.917" level="INFO">0, 2, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.918" starttime="20151115 21:12:34.917"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.181" starttime="20151115 01:53:07.181"></status>
+<status status="PASS" endtime="20151115 21:12:34.918" starttime="20151115 21:12:34.918"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.181" critical="yes" starttime="20151115 01:53:07.178"></status>
+<status status="PASS" endtime="20151115 21:12:34.918" critical="yes" starttime="20151115 21:12:34.915"></status>
 </test>
 <test id="s1-t5" name="Get Arguments of class method">
 <kw name="Get Class Method" library="FuncLibrary">
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.182" level="INFO">${func} = &lt;bound method A.method of &lt;FuncLibrary.A object at 0x10e4189d0&gt;&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.182" starttime="20151115 01:53:07.181"></status>
+<msg timestamp="20151115 21:12:34.920" level="INFO">${func} = &lt;bound method A.method of &lt;FuncLibrary.A object at 0x7f9d9c95c0d0&gt;&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.920" starttime="20151115 21:12:34.919"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -154,8 +154,8 @@
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.182" level="INFO">${expected} = [u'a', u'b', u'c']</msg>
-<status status="PASS" endtime="20151115 01:53:07.182" starttime="20151115 01:53:07.182"></status>
+<msg timestamp="20151115 21:12:34.920" level="INFO">${expected} = [u'a', u'b', u'c']</msg>
+<status status="PASS" endtime="20151115 21:12:34.920" starttime="20151115 21:12:34.920"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -163,33 +163,33 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.183" level="INFO">0, 3, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.183" starttime="20151115 01:53:07.183"></status>
+<msg timestamp="20151115 21:12:34.921" level="INFO">0, 3, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.921" starttime="20151115 21:12:34.921"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.183" starttime="20151115 01:53:07.183"></status>
+<status status="PASS" endtime="20151115 21:12:34.922" starttime="20151115 21:12:34.922"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.184" critical="yes" starttime="20151115 01:53:07.181"></status>
+<status status="PASS" endtime="20151115 21:12:34.922" critical="yes" starttime="20151115 21:12:34.919"></status>
 </test>
 <test id="s1-t6" name="Get Arguments of Enumerable Class">
 <kw name="Get Enumerable Class" library="FuncLibrary">
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.184" level="INFO">${func} = &lt;FuncLibrary.Nebil instance at 0x10e41ecf8&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.184" starttime="20151115 01:53:07.184"></status>
+<msg timestamp="20151115 21:12:34.923" level="INFO">${func} = &lt;FuncLibrary.Nebil instance at 0x7f9d9c9632d8&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.924" starttime="20151115 21:12:34.923"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.185" level="INFO">${expected} = []</msg>
-<status status="PASS" endtime="20151115 01:53:07.185" starttime="20151115 01:53:07.185"></status>
+<msg timestamp="20151115 21:12:34.924" level="INFO">${expected} = []</msg>
+<status status="PASS" endtime="20151115 21:12:34.924" starttime="20151115 21:12:34.924"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -197,17 +197,17 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.186" level="INFO">0, 4, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.186" starttime="20151115 01:53:07.185"></status>
+<msg timestamp="20151115 21:12:34.925" level="INFO">0, 4, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.925" starttime="20151115 21:12:34.924"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.186" starttime="20151115 01:53:07.186"></status>
+<status status="PASS" endtime="20151115 21:12:34.925" starttime="20151115 21:12:34.925"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.186" critical="yes" starttime="20151115 01:53:07.184"></status>
+<status status="PASS" endtime="20151115 21:12:34.925" critical="yes" starttime="20151115 21:12:34.923"></status>
 </test>
 <test id="s1-t7" name="Get Arguments of Partial Method">
 <kw name="Get Partial" library="FuncLibrary">
@@ -217,8 +217,8 @@
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.187" level="INFO">${func} = &lt;functools.partial object at 0x10e4092b8&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.187" starttime="20151115 01:53:07.187"></status>
+<msg timestamp="20151115 21:12:34.926" level="INFO">${func} = &lt;functools.partial object at 0x7f9d9c9ad4c8&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.927" starttime="20151115 21:12:34.926"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -229,8 +229,8 @@
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.188" level="INFO">${expected} = [u'b', u'c']</msg>
-<status status="PASS" endtime="20151115 01:53:07.188" starttime="20151115 01:53:07.187"></status>
+<msg timestamp="20151115 21:12:34.927" level="INFO">${expected} = [u'b', u'c']</msg>
+<status status="PASS" endtime="20151115 21:12:34.927" starttime="20151115 21:12:34.927"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -238,33 +238,33 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.188" level="INFO">0, 5, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.188" starttime="20151115 01:53:07.188"></status>
+<msg timestamp="20151115 21:12:34.928" level="INFO">0, 5, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.928" starttime="20151115 21:12:34.927"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.189" starttime="20151115 01:53:07.188"></status>
+<status status="PASS" endtime="20151115 21:12:34.928" starttime="20151115 21:12:34.928"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.189" critical="yes" starttime="20151115 01:53:07.186"></status>
+<status status="PASS" endtime="20151115 21:12:34.929" critical="yes" starttime="20151115 21:12:34.926"></status>
 </test>
 <test id="s1-t8" name="Get Arguments of String method">
 <kw name="Get String Method" library="FuncLibrary">
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.190" level="INFO">${func} = &lt;built-in method join of str object at 0x10d796e18&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.190" starttime="20151115 01:53:07.189"></status>
+<msg timestamp="20151115 21:12:34.930" level="INFO">${func} = &lt;built-in method join of str object at 0x7f9da06fdf30&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.930" starttime="20151115 21:12:34.929"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.190" level="INFO">${expected} = []</msg>
-<status status="PASS" endtime="20151115 01:53:07.190" starttime="20151115 01:53:07.190"></status>
+<msg timestamp="20151115 21:12:34.930" level="INFO">${expected} = []</msg>
+<status status="PASS" endtime="20151115 21:12:34.930" starttime="20151115 21:12:34.930"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -272,33 +272,33 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.191" level="INFO">0, 6, 9, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.191" starttime="20151115 01:53:07.190"></status>
+<msg timestamp="20151115 21:12:34.931" level="INFO">0, 6, 9, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.931" starttime="20151115 21:12:34.931"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.191" starttime="20151115 01:53:07.191"></status>
+<status status="PASS" endtime="20151115 21:12:34.932" starttime="20151115 21:12:34.931"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.191" critical="yes" starttime="20151115 01:53:07.189"></status>
+<status status="PASS" endtime="20151115 21:12:34.932" critical="yes" starttime="20151115 21:12:34.929"></status>
 </test>
 <test id="s1-t9" name="Get Arguments of Method Descriptor">
 <kw name="Get Method Descriptor" library="FuncLibrary">
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.192" level="INFO">${func} = &lt;FuncLibrary.Nebil instance at 0x10e40e6c8&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.192" starttime="20151115 01:53:07.192"></status>
+<msg timestamp="20151115 21:12:34.933" level="INFO">${func} = &lt;FuncLibrary.Nebil instance at 0x7f9d9c9630e0&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.933" starttime="20151115 21:12:34.932"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.193" level="INFO">${expected} = []</msg>
-<status status="PASS" endtime="20151115 01:53:07.193" starttime="20151115 01:53:07.192"></status>
+<msg timestamp="20151115 21:12:34.933" level="INFO">${expected} = []</msg>
+<status status="PASS" endtime="20151115 21:12:34.933" starttime="20151115 21:12:34.933"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -306,33 +306,33 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.193" level="INFO">0, 4, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.193" starttime="20151115 01:53:07.193"></status>
+<msg timestamp="20151115 21:12:34.934" level="INFO">0, 4, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.934" starttime="20151115 21:12:34.934"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.194" starttime="20151115 01:53:07.193"></status>
+<status status="PASS" endtime="20151115 21:12:34.934" starttime="20151115 21:12:34.934"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.194" critical="yes" starttime="20151115 01:53:07.191"></status>
+<status status="PASS" endtime="20151115 21:12:34.935" critical="yes" starttime="20151115 21:12:34.932"></status>
 </test>
 <test id="s1-t10" name="Get Arguments of Item Getter">
 <kw name="Get Item Getter" library="FuncLibrary">
 <assign>
 <var>${func}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.195" level="INFO">${func} = &lt;operator.itemgetter object at 0x10e42a0d0&gt;</msg>
-<status status="PASS" endtime="20151115 01:53:07.195" starttime="20151115 01:53:07.194"></status>
+<msg timestamp="20151115 21:12:34.936" level="INFO">${func} = &lt;operator.itemgetter object at 0x7f9d9c951b50&gt;</msg>
+<status status="PASS" endtime="20151115 21:12:34.936" starttime="20151115 21:12:34.935"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
 <var>${expected}</var>
 </assign>
-<msg timestamp="20151115 01:53:07.195" level="INFO">${expected} = []</msg>
-<status status="PASS" endtime="20151115 01:53:07.195" starttime="20151115 01:53:07.195"></status>
+<msg timestamp="20151115 21:12:34.936" level="INFO">${expected} = []</msg>
+<status status="PASS" endtime="20151115 21:12:34.936" starttime="20151115 21:12:34.936"></status>
 </kw>
 <kw name="Get Arguments" library="FuncLibrary">
 <arguments>
@@ -340,17 +340,17 @@
 <arg>${False}</arg>
 <arg>${True}</arg>
 </arguments>
-<msg timestamp="20151115 01:53:07.196" level="INFO">0, 6, 11, F</msg>
-<status status="PASS" endtime="20151115 01:53:07.196" starttime="20151115 01:53:07.195"></status>
+<msg timestamp="20151115 21:12:34.937" level="INFO">0, 6, 11, F</msg>
+<status status="PASS" endtime="20151115 21:12:34.937" starttime="20151115 21:12:34.936"></status>
 </kw>
 <kw name="Result Should Be" library="FuncLibrary">
 <doc>Verifies that the current result is ``expected``.</doc>
 <arguments>
 <arg>${expected}</arg>
 </arguments>
-<status status="PASS" endtime="20151115 01:53:07.196" starttime="20151115 01:53:07.196"></status>
+<status status="PASS" endtime="20151115 21:12:34.937" starttime="20151115 21:12:34.937"></status>
 </kw>
-<status status="PASS" endtime="20151115 01:53:07.196" critical="yes" starttime="20151115 01:53:07.194"></status>
+<status status="PASS" endtime="20151115 21:12:34.937" critical="yes" starttime="20151115 21:12:34.935"></status>
 </test>
 <doc>Example test cases using the keyword-driven testing approach.
 
@@ -363,7 +363,7 @@ automation, but the _gherkin_ style might be even better
 if also business people need to understand tests. If the
 same workflow needs to repeated multiple times, it is best
 to use to the _data-driven_ approach.</doc>
-<status status="PASS" endtime="20151115 01:53:07.197" starttime="20151115 01:53:07.133"></status>
+<status status="PASS" endtime="20151115 21:12:34.938" starttime="20151115 21:12:34.774"></status>
 </suite>
 <statistics>
 <total>
